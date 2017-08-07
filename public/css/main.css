@@ -75,3 +75,14 @@ h2 {
 	.app-item .small {
 		color : #aaa;
 	}
+	
+	.app-item .no-poster {
+		width : 145px;
+		height : 213px;
+		background-color : #f6f6f5;
+		border : 1px solid #dddddd;
+		line-height : 213px;
+		text-align : center;
+		color : #aaa;
+		font-size : 50px;
+	}

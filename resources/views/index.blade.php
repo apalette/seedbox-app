@@ -91,6 +91,13 @@
     					<div class="small line">Par username</div>
     					<div class="line"><span class="label label-danger">Série</span> <span class="label label-success">Completed</span></div>
     				</li>
+    				<li class="app-item">
+    					<div class="line no-poster"><span class="glyphicon glyphicon-film"></span></div>
+    					<h3 class="line">Teen Wolf</h3>
+    					<h4 class="line">S06E12</h4>
+    					<div class="small line">Par username</div>
+    					<div class="line"><span class="label label-danger">Série</span> <span class="label label-success">Completed</span></div>
+    				</li>
     			</ul>
     		</div>
     	</div>
