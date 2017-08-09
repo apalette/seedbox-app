@@ -2,8 +2,12 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a, a:focus, a:hover {
-    color: #f4cf28;
+a {
+	color : #fdd700;
+}
+
+a:focus, a:hover {
+    color: #f5d248;
 }
 
 h2 {
@@ -14,13 +18,27 @@ h2 {
 	color : #666;
 }
 
+.btn-primary {
+    color: #000;
+    background-color: #fdd700;
+    border-color: #fdd700;
+}
+
+.btn-primary:hover,
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary,
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: #f5d248;
+    border-color: #f5d248;
+    color: #000;
+}
+
 .navbar-inverse .navbar-brand {
 	text-transform : uppercase;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
-	color: #f4cf28;
+	color: #fdd700;
 }
 	.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,
 	.navbar-text a:focus, .navbar-text a:hover {
@@ -85,4 +103,21 @@ h2 {
 		text-align : center;
 		color : #aaa;
 		font-size : 50px;
+	}
+	
+.form-wrapper {
+	margin-left : 9px;
+}
+
+.form-block {
+	margin-bottom : 10px;
+	border : 1px solid #f4cf28;
+	padding : 10px;
+}
+	.form-block h3 {
+		margin : -10px -10px 10px -10px;
+		padding : 10px;
+		background-color : #f4cf28;
+		font-size : 16px;
+		color : #222;
 	}
