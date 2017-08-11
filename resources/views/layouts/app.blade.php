@@ -28,9 +28,10 @@
         		</div>
         		<div id="navbar" class="navbar-collapse collapse">
           			<ul class="nav navbar-nav">
+          				{{url()->current()}}
             			<li{!!(url()->current() == url('/')) ? ' class="active"' : ''!!}><a href="{{url('/')}}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             			<li{!!(url()->current() == url('/newfile')) ? ' class="active"' : ''!!}><a href="{{url('/newfile')}}"><span class="glyphicon glyphicon-plus-sign"></span> Add File</a></li>
-            			<li {!!(url()->current() == url('/users')) ? ' class="active"' : ''!!}><a href="{{url('/users')}}"><span class="glyphicon glyphicon-user"></span> Users</a></li>
+            			<li {!!((url()->current() == url('/users')) || (strpos(url()->current(), url('users/edit')) !== false)) ? ' class="active"' : ''!!}><a href="{{url('/users')}}"><span class="glyphicon glyphicon-user"></span> Users</a></li>
           			</ul>
           			<ul class="nav navbar-nav navbar-right">
           				<li><span class="navbar-text">Username <a href="{{url('/logout')}}"><i class="glyphicon glyphicon-log-out"></i></a></span></li>
