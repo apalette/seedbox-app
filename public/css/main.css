@@ -12,6 +12,7 @@ a:focus, a:hover {
 
 h2 {
 	margin-left : 9px;
+	margin-right : 9px;
 	margin-bottom : 30px;
 	font-size : 19px;
 	font-weight : 500;
@@ -107,6 +108,7 @@ h2 {
 	
 .form-wrapper {
 	margin-left : 9px;
+	margin-right : 9px;
 }
 
 .form-block {

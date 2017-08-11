@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/newfile', function () {
     return view('newfile');
 });
+
+Route::get('/users', function () {
+    return view('users');
+});
+
+Route::get('/users/edit/{id}', function () {
+    return view('users-edit');
+})->where('id', '[0-9]+');
