@@ -21,7 +21,7 @@
 				<tr>
 					<td>
 						<a class="btn btn-primary btn-xs" href="{{url('/users/edit/1')}}"><span class="glyphicon glyphicon-pencil"></span></a>
-						<a class="btn btn-danger btn-xs" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+						<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#modal_delete_1"><span class="glyphicon glyphicon-trash"></span></a>
 					</td>
 		        	<td>John</td>
 		        	<td>Doe</td>
@@ -34,7 +34,7 @@
 		      	<tr>
 		      		<td>
 						<a class="btn btn-primary btn-xs" href="{{url('/users/edit/1')}}"><span class="glyphicon glyphicon-pencil"></span></a>
-						<a class="btn btn-danger btn-xs" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+						<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#modal_delete_1"><span class="glyphicon glyphicon-trash"></span></a>
 					</td>
 		      		<td>Mary</td>
 		        	<td>Moe</td>
@@ -47,7 +47,7 @@
 		      	<tr>
 		      		<td>
 						<a class="btn btn-primary btn-xs" href="{{url('/users/edit/1')}}"><span class="glyphicon glyphicon-pencil"></span></a>
-						<a class="btn btn-danger btn-xs" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+						<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#modal_delete_1"><span class="glyphicon glyphicon-trash"></span></a>
 					</td>
 		      		<td>July</td>
 		        	<td>Dooley</td>
@@ -61,6 +61,28 @@
 		</table>
 	</div>
 </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal_delete_1">
+	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h4 class="modal-title">Delete an account</h4>
+      		</div>
+      		<div class="modal-body">
+        		<p>Are you sure?</p>
+      		</div>
+      		<div class="modal-footer">
+      			<form>
+        			<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        			<button type="button" class="btn btn-primary">Yes, delete!</button>
+        		</form>
+      		</div>
+		</div>
+  	</div>
+</div>
+
+
 <hr/>
 <h2>Create an account</h2>
 <form class="form-wrapper">
